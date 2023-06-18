@@ -1,0 +1,551 @@
+/* Базовые стили */
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+    --color-grey-dark: #4B4B4E;
+    --color-grey-light: #F7F6F6;
+    --color-grey2: #D7D7D7;
+    --color-grey4: #BDBDBD;
+    --color-yellow: #F0A410;
+    font-size: 16px !important;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul, p, h1, h2, h3, figure, figcaption {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Начало вёрстки */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header .head-top {
+    padding: 5px 0;
+    background-color: var(--color-grey-light);
+}
+
+header .head-top nav {
+    padding-right: 22px;
+}
+
+header .head-top nav a {
+    width: 20px;
+    height: 20px;
+    background-color: var(--color-grey-dark);
+    border-radius: 50px;
+    transition: 0.5s all ease;
+}
+
+header .head-top nav a:hover {
+    background-color: var(--color-yellow);
+}
+
+header .head-top nav a:nth-of-type(1) img {
+    width: 15px;
+    height: 12px;
+}
+
+header .head-top nav a:nth-of-type(2) img {
+    width: 13px;
+    height: 15px;
+}
+
+header .head-top nav a:nth-of-type(3) img {
+    width: 12px;
+    height: 12px;
+    margin-left: 1px;
+}
+
+header .head-top .my-profile {
+    height: 25px;
+    padding-left: 22px;
+    border-left: 1px solid var(--color-grey4);
+}
+
+header .head-top .my-profile:hover figure figcaption {
+    color: var(--color-yellow);
+}
+
+header .head-top .my-profile figure {
+    gap: 19px;
+}
+
+header .head-top .my-profile figure figcaption {
+    color: var(--color-grey-dark);
+    font-size: 0.813rem;
+    transition: 0.5s all ease;
+}
+
+header .header {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--color-grey2);
+}
+
+header .header nav a {
+    padding-bottom: 4px;
+    font-size: 0.875rem;
+    color: var(--color-grey-dark);
+    border-bottom: 1px solid transparent;
+    transition: 0.5s all ease;
+}
+
+header .header nav a:hover {
+    color: var(--color-yellow);
+    border-bottom: 1px solid var(--color-yellow);
+}
+
+header .header form > div {
+    max-width: 329px;
+    width: 100%;
+    padding: 8px 8px 8px 15px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-grey2);
+    border-radius: 5px;
+}
+
+header .header form > div input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 0.875rem;
+}
+
+header .header form > div input::placeholder {
+    font-size: 0.875rem;
+    color: var(--color-grey2);
+}
+
+header .header form > div button {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin-left: 8px;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+header .header form > div button img {
+    width: 22px;
+    height: 23px;
+}
+
+header .header .cart {
+    padding-left: 24px;
+    gap: 12px;
+}
+
+header .header .cart img {
+    width: 24px;
+    height: 24px;
+}
+
+header .header .cart p {
+    font-size: 0.875rem;
+    color: var(--color-grey-dark);
+}
+
+header .header .cart a {
+    font-size: 0.813rem;
+    color: var(--color-yellow);
+    transition: 0.5s all ease;
+}
+
+header .header .cart a:hover {
+    text-decoration: underline;
+}
+
+/* Section Categories */
+
+.categories {
+    margin: 21px 0 50px;
+}
+
+.categories .categories-menu h3 {
+    height: 50px;
+    padding-left: 28px;
+    padding-right: 15px;
+    background-color: var(--color-yellow);
+    border-radius: 5px 5px 0 0;
+    font-size: 1.125rem;
+    color: var(--color-white);
+}
+
+.categories .categories-menu h3 button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.categories .categories-menu button svg {
+    width: 44px;
+    height: 28px;
+}
+
+.categories .categories-menu .menu {
+    padding-top: 6px;
+    padding-bottom: 10px;
+    border-right: 1px solid var(--color-grey2);
+    border-bottom: 1px solid var(--color-grey2);
+    border-left: 1px solid var(--color-grey2);
+    border-radius: 0 0 5px 5px;
+}
+
+.categories .categories-menu .menu a {
+    width: 100%;
+    display: inline-block;
+}
+
+.categories .categories-menu .menu ul li {
+    padding-left: 28px;
+    padding-right: 15px;
+}
+
+.categories .categories-menu .menu ul li:hover, .categories .categories-menu .menu ul li.active {
+    font-weight: 600;
+}
+
+.categories .categories-menu .menu ul li a {
+    padding: 8px 0;
+    font-size: 0.875rem;
+    color: var(--color-grey-dark);
+}
+
+.categories .categories-menu .sub-categories li {
+    font-weight: 400;
+}
+
+.categories .categories-menu .sub-categories li.active {
+    background: url(../images/layout/arrow-right.png) no-repeat;
+    background-position: 85% 50%;
+}
+
+.categories .categories-menu .sub-categories li:hover a, .categories .categories-menu .sub-categories li.active a {
+    font-weight: 700;
+    color: var(--color-yellow);
+}
+
+.items .nav {
+    padding: 14px 8px;
+}
+
+.items .nav .sort, .items .nav .count {
+    gap: 10px;
+}
+
+.items .nav a, .items .nav p {
+    font-size: 0.875rem;
+    color: var(--color-grey-dark);
+}
+
+.items .nav a {
+    gap: 10px;
+    transition: 0.3s all ease;
+}
+
+.items .nav a img {
+    width: 16px;
+    height: 16px;
+    transition: 0.3s all ease;
+}
+
+.items .nav a:hover, .items .nav a.active {
+    color: var(--color-yellow);
+}
+
+.items .nav a.active:hover img, .items .nav a.active.sort-desc img {
+    transform: rotate(180deg);
+}
+
+.items .boxes {
+    gap: 39px;
+}
+
+.items .boxes .box, .items .boxes .box .figure {
+    width: 270px;
+}
+
+.items .boxes .box .figure, .items .boxes .box .figure img {
+    height: 317px;
+}
+
+.items .boxes .box .figure img {
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.items .boxes .box figcaption {
+    padding: 14px 0 12px 9px;
+}
+
+.items .boxes .box p {
+    font-size: 0.875rem;
+    color: var(--color-grey-dark);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.items .boxes .box p span {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.items .boxes .box a {
+    width: 100%;
+    height: 40px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-yellow);
+    border-radius: 5px;
+    font-size: 0.875rem;
+    color: var(--color-yellow);
+    transition: 0.3s all ease;
+}
+
+.items .boxes .box a:hover {
+    background-color: var(--color-yellow);
+    color: var(--color-white);
+}
+
+.items .pagination {
+    margin-top: 48px;
+}
+
+.items .pagination nav {
+    gap: 16px;
+}
+
+.items .pagination a {
+    font-size: 1rem;
+    color: var(--color-grey-dark);
+    transition: 0.3s all ease;
+}
+
+.items .pagination a:hover, .items .pagination a.active {
+    color: var(--color-yellow);
+}
+
+.items .pagination a img {
+    width: 20px;
+    height: 26px;
+}
+
+.items .pagination a:first-of-type {
+    margin-right: 5px;
+}
+
+.items .pagination a:last-of-type {
+    margin-left: 5px;
+}
+
+.items .pagination a:first-of-type img {
+    transform: rotate(-90deg);
+}
+
+.items .pagination a:last-of-type img {
+    transform: rotate(90deg);
+}
+
+/* section New-Items */
+
+.new-items h2, .popular-items h2, .benefits h2, .subscribe h2 {
+    margin: 48px 0;
+    font-weight: 600;
+    font-size: 1.875rem;
+    color: var(--color-grey-dark);
+}
+
+.benefits p {
+    font-size: 1.1rem;
+    color: var(--color-grey-dark);
+}
+
+.benefits p span {
+    font-weight: 700;
+}
+
+.benefits figure figcaption {
+    max-width: 110px;
+    margin: 30px auto 0;
+    font-size: 0.938rem;
+    color: var(--color-grey-dark);
+}
+
+/* Section Subscribe */
+
+.subscribe {
+    padding: 120px 0 75px;
+}
+
+.subscribe .container {
+    text-align: center;
+}
+
+.subscribe h2 {
+    margin: 0;
+}
+
+.subscribe h3 {
+    margin-top: 20px;
+    font-size: 1.25rem;
+    color: var(--color-grey-dark);
+}
+
+.subscribe form {
+    max-width: 557px;
+    margin: 40px auto 0;
+}
+
+.subscribe form input {
+    width: 270px;
+    height: 46px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.subscribe form input::placeholder {
+    font-size: 14px;
+}
+
+.subscribe input[type="email"] {
+    padding: 0 16px;
+    border: 1px solid var(--color-grey2);
+}
+
+.subscribe input[type="submit"] {
+    background-color: var(--color-yellow);
+    border: 1px solid var(--color-yellow);
+    color: var(--color-white);
+    transition: 0.5s all ease;
+}
+
+.subscribe input[type="submit"]:hover {
+    font-size: 16px;
+}
+
+.subscribe p {
+    margin-top: 23px;
+    font-size: 14px;
+    color: var(--color-grey-dark);
+}
+
+.subscribe p a {
+    color: var(--color-yellow);
+    text-decoration: underline;
+}
+
+/* Footer */
+
+footer {
+    padding: 60px 0 39px;
+    background-color: var(--color-grey-dark);
+}
+
+footer .logo a {
+    scroll-behavior: smooth;
+}
+
+footer .logo figcaption {
+    margin-top: 40px;
+    font-size: 1.063rem;
+    color: var(--color-white);
+}
+
+footer .menu a {
+    margin-bottom: 18px;
+    font-size: 0.875rem;
+    color: var(--color-white);
+    transition: 0.5s all ease;
+}
+
+footer .menu a.active, footer .menu a:hover {
+    color: var(--color-yellow);
+}
+
+footer form > div {
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--color-white);
+}
+
+footer form input, footer form input::placeholder {
+    width: 100%;
+    font-size: 0.875rem;
+    color: var(--color-white);
+}
+
+footer form input, footer form button {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+footer form button img {
+    width: 22px;
+    height: 23px;
+}
+
+footer .soc {
+    margin-top: 46px;
+}
+
+footer .soc p {
+    font-size: 0.875rem;
+    color: var(--color-white);
+}
+
+footer .soc nav {
+    margin-top: 30px;
+    gap: 65px;
+}
+
+footer .soc nav a svg {
+    width: 35px;
+    height: 35px;
+    transition: 0.5s all ease;
+}
+
+footer .soc nav a:hover svg {
+    fill: var(--color-yellow);
+}
+
+footer .copyrights {
+    margin-top: 49px;
+    font-size: 0.750rem;
+    color: var(--color-white);
+}
+
+footer .notation {
+    margin-top: 49px;
+    font-size: 1.750rem;
+    color: var(--color-white);
+}
+
+footer .notation a {
+    color: var(--color-yellow);
+    transition: 0.5s all ease;
+}
+
+footer .notation a:hover {
+    font-weight: 600;
+}

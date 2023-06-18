@@ -1,0 +1,234 @@
+@media screen and (max-width: 1400px) {
+    header .head-top nav {
+        padding-right: 14px;
+    }
+
+    header .header .logo img {
+        max-width: 100%;
+    }
+
+    .items .boxes .box, .items .boxes .box .figure {
+        width: 260px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    header .head-top nav {
+        padding-left: 0;
+    }
+
+    header .head-top .my-profile figure {
+        gap: 10px;
+    }
+
+    header .header .cart {
+        padding-left: 8px;
+    }
+
+    /* Footer */
+
+    footer .logo a img {
+        width: 150px;
+        height: 50px;
+    }
+
+    footer .logo figcaption {
+        font-size: 0.875rem;
+        text-align: center;
+    }
+
+    footer .menu  {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    header .head-top nav {
+        gap: 8px;
+    }
+
+    header .header .container > .row {
+        gap: 12px;
+    }
+
+    /* Section Subscribe */
+
+    .subscribe {
+        padding-top: 68px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header .head-top .my-profile {
+        padding-left: 10px;
+    }
+
+    header .head-top .my-profile figure {
+        gap: 4px;
+    }
+
+    header .head-top .my-profile figure img {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Section */
+
+    .items .boxes .box {
+        width: 234px;
+    }
+
+    .items .boxes .box, .items .boxes .box .figure {
+        width: 234px;
+    }
+
+    /* Sections 2 */
+
+    .new-items h2, .popular-items h2 {
+        margin-bottom: 20px;
+    }
+
+    /* Section 3 */
+
+    .benefits p {
+        font-size: 1rem;
+    }
+
+    /* Section Subscribe */
+
+    .subscribe h2 {
+        font-size: 1.6rem;
+    }
+
+    .subscribe input[type="email"] {
+        margin-top: 16px;
+    }
+
+    /* Footer */
+
+    footer {
+        padding: 30px 0 20px;
+    }
+
+    footer .container > .row {
+        gap: 24px;
+    }
+
+    footer .logo {
+        text-align: right;
+    }
+
+    footer .logo figcaption {
+        max-width: 70%;
+        margin-left: auto;
+    }
+
+    footer .soc {
+        margin-top: 18px;
+    }
+
+    footer .soc nav {
+        margin-top: 22px;
+    }
+
+    footer .copyrights {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header .header .logo {
+        text-align: center;
+    }
+
+    header .header form, header .header .cart {
+        justify-content: center;
+    }
+
+    footer .logo {
+        text-align: center;
+    }
+
+    footer .logo figcaption {
+        max-width: none;
+        margin-top: 18px;
+    }
+
+    footer form {
+        width: 230px;
+        margin: 0 auto;
+    }
+
+    footer .soc p {
+        text-align: center;
+    }
+
+    footer .soc nav {
+        gap: 28px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header .header form, header .header .cart {
+        width: 100%;
+    }
+
+    /* Section Subscribe */
+
+    .subscribe h2 {
+        line-height: 27px;
+    }
+
+    .subscribe h3 {
+        line-height: 27px;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    header .head-top .container > .row {
+        justify-content: center !important;
+    }
+
+    header .head-top nav, header .head-top .my-profile {
+        width: 50%;
+    }
+
+    header .header .logo {
+        width: 150px;
+    }
+
+    header .header nav {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    header .header nav a {
+        display: block !important;
+        font-size: 0.8rem;
+    }
+
+    /* Section 3 */
+
+    .benefits figure {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    header .header nav {
+        width: 55%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .header nav a {
+        border-bottom: none;
+    }
+
+    header .header nav a:hover {
+        border-bottom: none;
+    }
+}
